@@ -12,5 +12,8 @@ const tax= .08;
 let totalTax= tax*(price*qty);
 let total= totalTax + (price*qty);
 
-
+console.log(`${product} x ${qty}`);
+console.log(`subtotal: ${price*qty}`);
+console.log(`tax: ${tax*(price*qty)}`);
+console.log(`total: ${total}`);
 document.write(`<div><h2>Receipt</h2><p>${product} x ${qty}</p><p>subtotal: ${price*qty}</p><p>tax: ${tax*(price*qty)}</p><p>total: ${total}</p></div>`)
